@@ -439,17 +439,3 @@ agent_created: true
 
 ---
 
-## 🧬 后台进化系统（AI 自迭代，不消耗用户 token）
-
-> **重要：以下功能已从本 skill 移出，由独立后台引擎 `bio-evolution-engine` 处理。**
-> 
-> 进化成果自动同步到本 skill：
-> - 变式追问 → 按需推送给用户
-> - 瘦身监控 → 调整默认输出模式
-> - 迭代评估 → 优化因果链模板
-> - 错题模式挖掘 → 更新避坑清单
-> - Token 优化 → 缩短本 skill 体积
-
-**后台引擎位置**：`~/.workbuddy/skills/bio-evolution-engine/SKILL.md`
-
-**同步规则**：后台引擎执行进化后，将成果写入 `evolution_log.md` 和 `learning_profile.md`，前台 skill 定期吸收更新。
