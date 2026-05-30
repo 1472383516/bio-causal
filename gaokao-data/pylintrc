@@ -1,0 +1,35 @@
+[MAIN]
+# 项目：Claw 生物高考备考工具集
+# 目标：Python 3.10+，高考级别代码质量（清晰 > 花哨）
+
+# 忽略的目录
+ignore=venv,.venv,node_modules,__pycache__,gaokao-dataset,optimization-demo,skills,gaokao-bio-github
+
+# 规则开关
+disable=
+    missing-module-docstring,      # 脚本文件不需要 docstring
+    missing-function-docstring,    # 小函数不强制 docstring
+    too-few-public-methods,        # dataclass 类不要求多方法
+    too-many-arguments,            # 高考脚本不定死参数上限
+    too-many-locals,               # 提取脚本局部变量多，合理
+    too-many-branches,             # 分类逻辑分支多，合理
+    too-many-statements,           # 脚本文件行数不限
+    fixme,                         # TODO 注释允许
+    line-too-long                  # 放过长行
+
+# 最低评分门槛
+fail-under=7.0
+
+[FORMAT]
+max-line-length=120
+indent-string='    '
+
+[DESIGN]
+max-args=8
+max-locals=20
+
+[SIMILARITIES]
+min-similarity-lines=6
+
+[BASIC]
+good-names=i,j,k,id,q,f,fn,fh,n,x,y,d,c,v
